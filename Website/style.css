@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root {
+  --mainColor: rgb(221, 239, 239);
+  --subMainColor: hsl(180, 37%, 10%);
+  
+  --mainColor: rgb(236, 255, 255);
+  
+  --light30: hsla(180, 36%, 10%, .1);
+  --light50: hsla(180, 36%, 10%, .5);
+  --light20: hsla(180, 36%, 10%, .2);
+  --dark70: hsla(180, 36%, 10%, 0.7);
+  --paddingZero:0px;
+  --mainPadding2: 40px;
+  --mainPadding1: 100px;
+  --headerHeight:91px;
+  --maxWidth:1024px;
+  --radius:10px;
+}
+html{
+    height: 100vh;
+    scroll-behavior: smooth;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins;
+    color: var(--subMainColor);
+  }
+  
+  body {
+    width:100%;
+    background: var(--mainColor) /*url(images/bgImage2.svg)*/;
+    background-repeat: no-repeat;
+    background-position: 90% 80%;
+    background-attachment: scroll;
+    background-size: 30%;
+    text-align: center;
+  }
+  
+  .header {
+    width: 100%;
+    height: var(--headerHeight);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--paddingZero) var(--mainPadding2);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background: var(--mainColor);
+    z-index: 10;
+  }
+  
+.header .header_logo {
+    width: 250px;
+    height: var(--headerHeight);
+    mask-image: url(Image/Logo.svg);
+    -webkit-mask-image:url(Image/Logo.svg);
+    mask-size: cover;
+    -webkit-mask-size:100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    background: var(--subMainColor);
+}
+.header .header_logo a {
+    height: var(--headerHeight);
+    display: block;
+}
+
+button {
+    background-color: rgb(221, 239, 239);
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    
+  }
+
+
